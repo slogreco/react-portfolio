@@ -1,0 +1,19 @@
+.nav-background {
+    background-color: #2D2D2B;
+}
+
+.nav-text {
+    color: #F0E4D8;
+}
+
+.nav-text:hover {
+    color: #C39E9E;
+}
+
+.nav-title {
+    color: #C39E9E;
+}
+
+.nav-title:hover {
+    color: #F0E4D8;
+}

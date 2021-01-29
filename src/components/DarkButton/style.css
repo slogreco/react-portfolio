@@ -1,0 +1,14 @@
+
+
+.drk-button {
+    color:#F0E4D8 !important;
+    background: #2D2D2B !important;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .drk-button:hover {
+    color: #F6F0F1 !important;
+    background: #C39E9E !important;
+    transition: all 0.4s ease 0s;
+  }
