@@ -56,6 +56,9 @@ function About() {
 
                 </Col>
             </Row>
+            <Row>
+                <br></br>
+            </Row>
         </Container >
     );
 
