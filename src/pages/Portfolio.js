@@ -8,6 +8,7 @@ import DarkButton from "../components/DarkButton/DarkButton"
 
 
 
+
 const styles = {
     img: {
         maxHeight: "250px",
@@ -15,6 +16,9 @@ const styles = {
         marginLeft: "auto",
         marginRight: "auto"
     },
+    text: {
+        color: '#F0E4D8'
+    }
 }
 
 function Portfolio() {
@@ -41,10 +45,8 @@ function Portfolio() {
                             <hr className="my-4"></hr>
                             <p>With the U-Pick application indecisiveness won't stop you from getting food, drinks, or seeing a movie with friends.</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/joeybrown-ctrl/U-Pick">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://u-pick-app.herokuapp.com/">View Deployment
-                        </DarkButton>
+                            <a href="https://github.com/joeybrown-ctrl/U-Pick" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://u-pick-app.herokuapp.com/" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -59,28 +61,24 @@ function Portfolio() {
                             <hr className="my-4"></hr>
                             <p> With the application Unleash a user can create a profile for their pet, have it displayed publicly, then apply for open job applications.</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/slogreco/artemis">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://artemis-project-2.herokuapp.com/">View Deployment
-                        </DarkButton>
+                            <a href="https://github.com/slogreco/artemis" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://artemis-project-2.herokuapp.com/" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>
                 <Col size="md-4">
-                <Card>
-                    <CardHeader>
-                        <h3>Dime Travel</h3>
-                    </CardHeader>
+                    <Card>
+                        <CardHeader>
+                            <h3>Dime Travel</h3>
+                        </CardHeader>
                         <CardBody>
                             <img src={process.env.PUBLIC_URL + "/assets/dimeTravel.png"} className="img-thumbnail" style={styles.img}
                                 alt="Unleash" />
                             <hr className="my-4"></hr>
                             <p>The Dime Travel application allows you to visualize your vacation destination while viewing the currency exchange rate.</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/slogreco/dime-travel">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://slogreco.github.io/dime-travel/">View Deployment
-                        </DarkButton>
+                            <a href="https://github.com/slogreco/dime-travel" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://slogreco.github.io/dime-travel/" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -100,10 +98,8 @@ function Portfolio() {
                             <hr className="my-4"></hr>
                             <p>Utilizes JavaScript to make a functional random password generator.</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/slogreco/password-generator">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://slogreco.github.io/password-generator/">View Deployment
-                        </DarkButton>
+                            <a href="https://github.com/slogreco/password-generator" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://slogreco.github.io/password-generator/" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>
@@ -118,28 +114,24 @@ function Portfolio() {
                             <hr className="my-4"></hr>
                             <p>A command-line applicaiton where a readme.md file is created using Node.js</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/slogreco/read-me-generator">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://drive.google.com/file/d/1GOjgRXHBdUv4DuS7IhZkkrjtil4HvbJc/view">View Demo
-                        </DarkButton>
+                            <a href="https://github.com/slogreco/read-me-generator" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://drive.google.com/file/d/1GOjgRXHBdUv4DuS7IhZkkrjtil4HvbJc/view" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>
                 <Col size="md-4">
-                <Card>
-                    <CardHeader>
-                        <h3>Budget Tracker</h3>
-                    </CardHeader>
+                    <Card>
+                        <CardHeader>
+                            <h3>Budget Tracker</h3>
+                        </CardHeader>
                         <CardBody>
                             <img src={process.env.PUBLIC_URL + "/assets/budget-tracker.jpg"} className="img-thumbnail" style={styles.img}
                                 alt="Budget Tracker" />
                             <hr className="my-4"></hr>
                             <p>This budget tracking app is a PWA that allows the user to add expenses and deposits to their budget whether or not they have an internet connection.</p>
                             <hr className="my-4"></hr>
-                            <DarkButton href="https://github.com/slogreco/budget-tracker">Get the Repo
-                        </DarkButton>
-                            <DarkButton href="https://budget-tracker-4000.herokuapp.com/">View Deployment
-                        </DarkButton>
+                            <a href="https://github.com/slogreco/budget-tracker" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> Get the Repo </DarkButton></a>
+                            <a href="https://budget-tracker-4000.herokuapp.com/" style={styles.text} target="_blank" rel="noreferrer"><DarkButton> View Deployment </DarkButton></a>
                         </CardBody>
                     </Card>
                 </Col>

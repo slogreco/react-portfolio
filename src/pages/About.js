@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row, Container } from "../components/Grid/Grid";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import DarkButton from "../components/DarkButton/DarkButton";
+import {Link} from "react-router-dom"
 
 const styles = {
     img: {
@@ -50,16 +51,14 @@ function About() {
                     front end users interact within emails by leveraging her background to create fast paced,
                         quality driven, and user friendly content.</p>
                     <br />
-                    <DarkButton href="/contact">
-                        Check out Shoshanah's Resume
+                    <Link to="/contact">
+                        <DarkButton>
+                            Check out Shoshanah's Resume
                         </DarkButton>
-
+                    </Link>
                 </Col>
             </Row>
-            <Row>
-                <br></br>
-            </Row>
-        </Container >
+        </Container>
     );
 
 }
