@@ -28,7 +28,7 @@ function About() {
             </Row>
             <Row>
                 <Col size="md-4">
-                    <img src={process.env.PUBLIC_URL + "/assets/IMG_0150.jpg"} className="rounded" style={styles.img}
+                    <img src={process.env.PUBLIC_URL + "/assets/profile-img.jpg"} className="rounded" style={styles.img}
                         alt="Shoshanah" />
                 </Col>
                 <br></br>
