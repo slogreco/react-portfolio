@@ -1,0 +1,23 @@
+
+
+.button {
+    color:#C39E9E;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2D2D2B;
+    text-align: center;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.4s ease 0s;
+    font-size: 20px;
+    border: #C39E9E;
+   
+  }
+  
+  .button:hover {
+    color: #2D2D2B;
+    background: #C39E9E;
+    transition: all 0.4s ease 0s;
+  }
+

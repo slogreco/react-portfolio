@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid/Grid";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import { Image } from "react-bootstrap"
 
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
       <Row>
         <Col size="md-12">
           <Jumbotron>
-                      <h1>Shoshanah Lo Greco</h1>
+            <h1>Shoshanah Lo Greco</h1>
             <hr className="my-4"></hr>
             <div className="row">
               <div className="col-4"><Link to="/about" className="btn btn-outline-light btn-lg btn-block"

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-
+import FooterButton from "../FooterButton/FooterButton";
 
 
 function Footer() {
@@ -13,15 +13,15 @@ function Footer() {
                     <div className="row justify-content-center foot-background" >
                         <div className="row text-center">
                             <ul className="page-footer">
-                                <a href="https://www.linkedin.com/in/shoshanahlogreco/"
-                                    className="btn-floating btn-lg btn-a foot-text" type="button" role="button" target="_blank" rel="noreferrer"><i
-                                        className="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/slogreco" className="btn-floating btn-lg btn-git foot-text" 
-                                    type="button" role="button" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
-                                <a href="mailto:shoshanahlogreco@gmail.com" className=" btn-floating btn-lg btn-email foot-text"
-                                    type="button" role="button" target="_blank" rel="noreferrer"><i className="fas fa-envelope"></i></a>
-
+                            <FooterButton href="https://www.linkedin.com/in/shoshanahlogreco/">
+                                <i className="fab fa-linkedin-in"></i>
+                            </FooterButton>
+                            <FooterButton href="https://github.com/slogreco">
+                                <i className="fab fa-github"></i>
+                            </FooterButton>
+                            <FooterButton href="mailto:shoshanahlogreco@gmail.com">
+                                <i className="fas fa-envelope"></i>
+                            </FooterButton>
                                 <br />
                                 <p className="foot-title">&copy;
                                 2021 Shoshanah Lo Greco. All rights reserved.
