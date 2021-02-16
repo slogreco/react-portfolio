@@ -17,3 +17,7 @@
 .nav-title:hover {
     color: #F0E4D8;
 }
+
+.navbar-collapse {
+    color: #C39E9E;
+}

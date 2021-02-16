@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row, Container } from "../components/Grid/Grid";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import { Link } from "react-router-dom"
-import { Image } from "react-bootstrap"
+// import { Image } from "react-bootstrap"
 
 
 function Home() {

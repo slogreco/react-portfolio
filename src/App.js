@@ -7,7 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <Router basename="/">
       <div>
         <Navbar />
-        <Switch>
+        <div className="container">
           <Route exact path="/">
             <Home />
           </Route>
@@ -28,8 +28,8 @@ function App() {
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
-        </Switch>
-        <Footer/>
+        </div>
+        <Footer />
       </div>
     </Router>
   );
