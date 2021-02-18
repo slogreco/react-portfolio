@@ -1,0 +1,14 @@
+.profileImg {
+    height: 400px;
+    margin: 0;
+    margin-left: 20%;
+}
+
+.name {
+    color: #C39E9E;
+    font-family: 'Mr De Haviland';
+    font-style: oblique;
+    letter-spacing: 3px;
+    font-size: 75px;
+    margin-top: 10%;
+}

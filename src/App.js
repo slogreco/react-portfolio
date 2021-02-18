@@ -15,7 +15,6 @@ function App() {
     <Router basename="/">
       <div>
         <Navbar />
-        <div className="container">
           <Route exact path="/">
             <Home />
           </Route>
@@ -28,7 +27,6 @@ function App() {
           <Route exact path="/portfolio">
             <Portfolio />
           </Route>
-        </div>
         <Footer />
       </div>
     </Router>

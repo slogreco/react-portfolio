@@ -12,6 +12,8 @@
 
 .nav-title {
     color: #C39E9E;
+    font-family: 'Mr De Haviland';
+    text-transform: lowercase;
 }
 
 .nav-title:hover {

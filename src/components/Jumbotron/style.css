@@ -1,5 +1,6 @@
 #jumbotron-style {
     background-color: #C39E9E;
-    height: 300;
+    height: auto;
     text-align: center;
+    font-family: 'Bantham';
    }
