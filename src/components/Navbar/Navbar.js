@@ -1,33 +1,62 @@
-import {Link} from "react-router-dom"
+// import { Link } from "react-router-dom"
 import React from "react";
-import "./style.css";
+// import { Navbar, Nav } from "react-bootstrap"
+import { AppBar, Toolbar, Typography, IconButton, makeStyles, Tooltip, Grid } from '@material-ui/core';
+import ListIcon from '@material-ui/icons/List';
+import theme from "../../Theme";
 
-function Navbar() {
+const useStyles = makeStyles({
+    shoshanahStyle: {
+        fontFamily: 'Mr De Haviland',
+        textTransform: 'none',
+        // marginRight: '40%'
+    },
+    resume: {
+        alignText: 'right',
+        textTransform: 'none',
+        fontFamily: 'Mr De Haviland',
+        // marginLeft: '30%'
+    },
+    root: {
+        margin: theme.spacing(1),
+    }
+});
+
+function Header() {
+
+    const classes = useStyles();
 
     return (
-        <nav className="navbar navbar-expand-lg nav-background" >
-            <Link className="navbar-brand nav-title" to="/">Shoshanah Lo Greco</Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <Link className="nav-link nav-text" to="/about">About Me</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link nav-text" to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link nav-text" to="/contact">Contact Me</Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <AppBar position="static" color="secondary" >
+            <Toolbar className={classes.root}>
+                <IconButton edge="start" color="primary" aria-label="menu" href='/'>
+                    <Typography
+                        className={classes.shoshanahStyle}
+                        variant="h3"
+                        color="primary">
+                        Shoshanah Lo Greco
+                </Typography>
+                </IconButton>
+                {/* <Grid 
+                container
+                direction="row"
+                justify="right"
+                alignItems="right"
+                >
+                    <IconButton
+                        className={classes.resume}
+                        edge="end"
+                        color="primary"
+                        href={process.env.PUBLIC_URL + "/assets/resume.pdf"}>
+                        Resume
+                </IconButton>
+                </Grid> */}
 
-        
+            </Toolbar>
+
+        </AppBar>
+
     )
 }
 
-export default Navbar;
+export default Header;

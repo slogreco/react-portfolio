@@ -1,3 +1,4 @@
+import React from "react";
 import { Image, Row, Col } from "react-bootstrap"
 import "./style.css"
 

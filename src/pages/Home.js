@@ -3,12 +3,17 @@ import { Col, Row, Container } from "../components/Grid/Grid";
 import Jumbotron from "../components/Jumbotron/Jumbotron";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero/Hero";
+// import { Container } from "react-bootstrap"
 
 
 
 
 function Home() {
   return (
+
+    // <Container>
+    //     <Hero></Hero>
+    // </Container>
     <Container fluid>
       <Hero />
       <Row>
