@@ -1,23 +1,14 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, ButtonGroup, CardActionArea, CardActions, CardMedia, Button, Paper, Grid } from '@material-ui/core';
+import { Card, CardActionArea, CardMedia, Paper, Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles({
     root: {
-        // maxWidth: '33%',
         margin: '5%',
     },
     media: {
         height: 500,
-    },
-    btnStyle: {
-        textTransform: 'none',
-        fontFamily: 'Mr De Haviland',
-        fontSize: '30pt',
-        "&:hover": {
-            color: '#999b84'
-        }
     },
     paper: {
         border: 'none',
@@ -52,19 +43,6 @@ export default function HomeCard() {
                                 title="Shoshanah"
                             />
                         </CardActionArea>
-                        {/* <CardActions>
-                            <ButtonGroup
-                                orientation="vertical"
-                                color="primary"
-                                aria-label="vertical contained primary button group"
-                                variant="text"
-                                fullWidth="true"
-                                className={classes.btnStyle}
-                            >
-                                <Button className={classes.btnStyle} href="/portfolio">Portfolio</Button>
-                                <Button className={classes.btnStyle} href={process.env.PUBLIC_URL + "/assets/resume.pdf"}>Resume</Button>
-                            </ButtonGroup>
-                        </CardActions> */}
                     </Card>
                 </Grid>
                 <Grid item xs={8}>

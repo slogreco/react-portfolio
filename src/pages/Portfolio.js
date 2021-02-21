@@ -1,33 +1,31 @@
 import React from "react";
-import { Col, Row, Container } from "../components/Grid/Grid";
-import Jumbotron from "../components/Jumbotron/Jumbotron";
-import Card from "../components/Card/Card";
-import CardHeader from "../components/CardHeader/CardHeader"
-import CardBody from "../components/CardBody/CardBody"
-import DarkButton from "../components/DarkButton/DarkButton"
 import PortfolioHeader from "../components/PortfolioHeader";
+import ProjectCard from "../components/ProjectCard";
 
 
 
 
-const styles = {
-    img: {
-        maxHeight: "250px",
-        display: "block",
-        marginLeft: "auto",
-        marginRight: "auto"
-    },
-    text: {
-        color: '#F0E4D8'
-    }
-}
+
+// const styles = {
+//     img: {
+//         maxHeight: "250px",
+//         display: "block",
+//         marginLeft: "auto",
+//         marginRight: "auto"
+//     },
+//     text: {
+//         color: '#F0E4D8'
+//     }
+// }
 
 function Portfolio() {
     return (
         <div>
-            {/* <PortfolioHeader></PortfolioHeader> */}
-            <Container fluid>
-                <Row>
+            <PortfolioHeader></PortfolioHeader>
+            <ProjectCard></ProjectCard>
+      
+            {/* <Container fluid> */}
+                {/* <Row>
                     <Col size="md-12">
                         <Jumbotron>
                             <h1 className="display-4 text-center">Portfolio</h1>
@@ -35,8 +33,8 @@ function Portfolio() {
                             <h5 className="lead text-center">A Collection and Projects and Assignments</h5>
                         </Jumbotron>
                     </Col>
-                </Row>
-                <Row>
+                </Row> */}
+                {/* <Row>
                     <Col size="md-4">
                         <Card>
                             <CardHeader>
@@ -142,10 +140,9 @@ function Portfolio() {
                 <Row>
                     <br></br>
                 </Row>
-            </Container>
-        </div>
+            </Container> */}
 
-
+</div>
     );
 }
 

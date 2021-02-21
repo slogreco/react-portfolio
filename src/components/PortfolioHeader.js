@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Paper, Grid} from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -11,6 +11,17 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+    header: {
+        textAlign: 'center',
+        textTransform: 'none',
+        fontFamily: 'Mr De Haviland',
+        marginTop: '2%'
+    },
+    subheader: {
+        textAlign: 'center',
+        textTransform: 'none',
+        fontFamily: 'Bantham',
+    }
 }));
 
 function PortfolioHeader() {
@@ -20,25 +31,22 @@ function PortfolioHeader() {
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
-                    <Paper className={classes.paper}>xs=12</Paper>
+                    <Typography
+                        className={classes.header}
+                        variant="h1"
+                        color="primary"
+                    >
+                        Portfolio
+                    </Typography>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>xs=12 sm=6</Paper>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>xs=12 sm=6</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
-                </Grid>
-                <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                <Grid item xs={12}>
+                    <Typography
+                        className={classes.subheader}
+                        variant="h6"
+                        color="primary"
+                    >
+                        A Collection of Projects
+                    </Typography>
                 </Grid>
             </Grid>
         </div>

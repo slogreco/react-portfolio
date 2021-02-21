@@ -1,6 +1,4 @@
 import React from "react";
-// import "./style.css";
-// import FooterButton from "../FooterButton/FooterButton";
 import { GitHub, LinkedIn, Email } from '@material-ui/icons';
 import { AppBar, IconButton, Typography, Toolbar, makeStyles } from '@material-ui/core';
 

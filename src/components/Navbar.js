@@ -1,9 +1,6 @@
-// import { Link } from "react-router-dom"
 import React from "react";
-// import { Navbar, Nav } from "react-bootstrap"
 import { AppBar, Toolbar, makeStyles, Button, Avatar} from '@material-ui/core';
-// import ListIcon from '@material-ui/icons/List';
-// import theme from "../../Theme";
+
 
 const useStyles = makeStyles({
     bar: {
