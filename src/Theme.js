@@ -18,23 +18,29 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
     palette: {
+        //pure pink
         primary: {
             main: '#e7cac2',
         },
+        //grey
         secondary: {
             main: '#959595',
         },
+        //green
         error: {
             main: '#999b84',
         },
+        //offpink
         warning: {
-            main: '#999b84',
+            main: '#cebeb9',
         },
+        //softgrey
         info: {
-            main: '#999b84',
+            main: '#e8e8e8',
         },
+        //cream
         sucess: {
-            main: '#999b84',
+            main: '#e2e0d4',
         },
     },
     typography: {

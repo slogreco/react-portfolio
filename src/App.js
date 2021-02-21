@@ -5,8 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Navbar from "./components/Navbar/Navbar"
-import Footer from "./components/Footer/Footer"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
@@ -20,9 +20,6 @@ function App() {
           </Route>
           <Route exact path="/about">
             <About />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
