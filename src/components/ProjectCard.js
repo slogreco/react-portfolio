@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, Grid, Card, CardActionArea, CardMedia, CardContent, Typography, CardActions, Fab } from '@material-ui/core';
-import { Image } from '@material-ui/icons';
+import { Grid, Card, CardActionArea, CardContent, Typography, CardActions, Fab } from '@material-ui/core';
+import Image from 'material-ui-image';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -16,11 +16,9 @@ const useStyles = makeStyles((theme) => ({
         background: '#e8e8e8'
     },
     media: {
-        height: 250,
-        display: 'block',
+        // display: 'block',
         borderRadius: '10px',
         background: '#e8e8e8',
-        objectFit: 'cover'
     },
     btnStyle: {
         contentAlign: 'center',
@@ -44,10 +42,9 @@ function ProjectCard() {
                 <Grid item xs={6} sm={4}>
                     <Card className={classes.paper}>
                         <CardActionArea>
-                            <CardMedia
+                            <Image
+                                src={process.env.PUBLIC_URL + "/assets/u-pick.jpg"}
                                 className={classes.media}
-                                image={process.env.PUBLIC_URL + "/assets/u-pick.jpg"}
-                                title="Upick"
                             />
                             <CardContent className={classes.paper}>
                                 <Typography gutterBottom variant="h4" component="h3">
@@ -71,10 +68,9 @@ function ProjectCard() {
                 <Grid item xs={6} sm={4}>
                     <Card className={classes.paper}>
                         <CardActionArea>
-                            <CardMedia
+                            <Image
+                                src={process.env.PUBLIC_URL + "/assets/unleash.png"}
                                 className={classes.media}
-                                image={process.env.PUBLIC_URL + "/assets/unleash.png"}
-                                title="Unleash"
                             />
                             <CardContent className={classes.paper}>
                                 <Typography gutterBottom variant="h4" component="h3">
@@ -98,10 +94,9 @@ function ProjectCard() {
                 <Grid item xs={6} sm={4}>
                     <Card className={classes.paper}>
                         <CardActionArea>
-                            <CardMedia
+                            <Image
+                                src={process.env.PUBLIC_URL + "/assets/dimeTravel.png"}
                                 className={classes.media}
-                                image={process.env.PUBLIC_URL + "/assets/dimeTravel.png"}
-                                title="Dime Travel"
                             />
                             <CardContent className={classes.paper}>
                                 <Typography gutterBottom variant="h4" component="h3">
