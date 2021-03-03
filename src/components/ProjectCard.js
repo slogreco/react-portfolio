@@ -51,7 +51,7 @@ function ProjectCard() {
                                     UPick
                                 </Typography>
                                 <Typography variant="body1" color="textSecondary" component="p">
-                                    Bad at making decisions? With the U-Pick application indecisiveness won't stop you from getting food, drinks, or seeing a movie with friends.
+                                UPick is the revolutionary new App that works as the intermediary between you, your friends and what used to be big decisions like where to eat, and what to watch.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
