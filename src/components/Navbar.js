@@ -34,7 +34,7 @@ function Header() {
                     <Avatar alt="Logo" src={process.env.PUBLIC_URL + "/logo192.png"} href='/' className={classes.large} />
                 </Button>
                 <Button className={classes.btnStyle} href='/portfolio'>Portfolio</Button>
-                <Button className={classes.btnStyle} href={process.env.PUBLIC_URL + "/assets/resume.pdf"}>Resume</Button>
+                <Button className={classes.btnStyle} href={process.env.PUBLIC_URL + "/resume.pdf"}>Resume</Button>
             </Toolbar>
 
         </AppBar>
