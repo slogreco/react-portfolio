@@ -10,9 +10,9 @@ const useStyles = makeStyles({
         boxShadow: 'none'
     },
     media: {
-        height: 550,
-        width: 562,
-        objectFit: 'scale-down'
+        height: 500,
+        objectFit: 'contain',
+        contentAlign: 'center'
     },
     paper: {
         border: 'none',
@@ -21,7 +21,6 @@ const useStyles = makeStyles({
     },
     p: {
         fontFamily: 'Bentham',
-        objectFit: 'scale-down'
         // fontSize: '20px'
     },
     title: {
@@ -39,7 +38,7 @@ export default function HomeCard() {
     return (
         <div>
             <Grid container spacing={3}>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     <Card className={classes.root}>
                             <CardMedia
                                 className={classes.media}
