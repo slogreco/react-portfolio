@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         contentAlign: 'center',
         width: '50%',
         fontFamily: 'Bentham',
-        fontSize: '15pt',
+        fontSize: '1.25vw',
         color: '',
         "&:hover": {
             color: '#cebeb9',
@@ -51,7 +51,7 @@ function ProjectCard() {
                                     UPick
                                 </Typography>
                                 <Typography variant="body1" color="textSecondary" component="p">
-                                UPick is the revolutionary new App that works as the intermediary between you, your friends and what used to be big decisions like where to eat, and what to watch.
+                                    UPick is the revolutionary new App that works as the intermediary between you, your friends and what used to be big decisions like where to eat, and what to watch.
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
