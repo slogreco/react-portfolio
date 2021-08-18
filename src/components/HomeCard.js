@@ -1,14 +1,18 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Card, CardActionArea, CardMedia, Paper, Grid } from '@material-ui/core';
+import { Card, CardMedia, Paper, Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles({
     root: {
         margin: '5%',
+        border: 'none',
+        boxShadow: 'none'
     },
     media: {
-        height: 500,
+        height: 550,
+        width: 562,
+        objectFit: 'scale-down'
     },
     paper: {
         border: 'none',
@@ -17,6 +21,7 @@ const useStyles = makeStyles({
     },
     p: {
         fontFamily: 'Bentham',
+        objectFit: 'scale-down'
         // fontSize: '20px'
     },
     title: {
@@ -36,13 +41,11 @@ export default function HomeCard() {
             <Grid container spacing={3}>
                 <Grid item xs={4}>
                     <Card className={classes.root}>
-                        <CardActionArea>
                             <CardMedia
                                 className={classes.media}
                                 image={process.env.PUBLIC_URL + "/assets/profile-img.jpg"}
                                 title="Shoshanah"
                             />
-                        </CardActionArea>
                     </Card>
                 </Grid>
                 <Grid item xs={8}>
